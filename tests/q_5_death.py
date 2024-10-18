@@ -43,8 +43,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.all(np.array(death) == np.array(complete_md['DeathPenalty']))
-          True
+          >>> assert np.all(np.array(death) == np.array(complete_md['DeathPenalty']))
           """,
           'hidden': False,
           'locked': False

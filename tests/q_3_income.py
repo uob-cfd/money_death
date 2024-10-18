@@ -44,8 +44,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.all(np.array(income) == np.array(complete_md['Income']))
-          True
+          >>> assert np.all(np.array(income) == np.array(complete_md['Income']))
           """,
           'hidden': False,
           'locked': False

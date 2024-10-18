@@ -27,8 +27,7 @@ test = {
         {
           'code': r"""
           >>> # Some of your fake differences seem very high.
-          >>> np.all(fake_differences < 12500)
-          True
+          >>> assert np.all(fake_differences < 12500)
           """,
           'hidden': False,
           'locked': False
@@ -36,8 +35,7 @@ test = {
         {
           'code': r"""
           >>> # Some of your fake differences seem very low.
-          >>> np.all(fake_differences > -12500)
-          True
+          >>> assert np.all(fake_differences > -12500)
           """,
           'hidden': False,
           'locked': False

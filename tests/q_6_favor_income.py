@@ -26,16 +26,14 @@ test = {
         },
         {
           'code': r"""
-          >>> len(favor_income) == np.count_nonzero(death == 'Favor')
-          True
+          >>> assert len(favor_income) == np.count_nonzero(death == 'Favor')
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> favor_income.median() == 32499.5
-          True
+          >>> assert favor_income.median() == 32499.5
           """,
           'hidden': False,
           'locked': False

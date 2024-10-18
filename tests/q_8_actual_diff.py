@@ -26,8 +26,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.round(actual_diff, 2) == 4535.16
-          True
+          >>> assert np.round(actual_diff, 2) == 4535.16
           """,
           'hidden': False,
           'locked': False
